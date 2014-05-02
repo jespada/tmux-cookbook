@@ -6,15 +6,15 @@ provisioner:
   name: chef_zero
 
 platforms:
-  - name: ubuntu-1204-amd64 #opscode-ubuntu-14.04
+  - name: opscode-ubuntu-14.04
     driver_config:
-      box: ubuntu-1204-amd64 #opscode-ubuntu-14.04
- #     box_url: http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.04_chef-provisionerless.box
+      box: opscode-ubuntu-14.04
+      box_url: http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.04_chef-provisionerless.box
 
-#  - name: centos-6.5
-#    driver_config:
-#      box: opscode-centos-6.5
-#      box_url: http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.5_chef-provisionerless.box
+  - name: centos-6.5
+    driver_config:
+      box: opscode-centos-6.5
+      box_url: http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.5_chef-provisionerless.box
 
   - name: centos-5.10
     run_list:
