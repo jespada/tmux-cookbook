@@ -21,12 +21,11 @@ Clone this repo, then:
 
 `bundle install`
 
-Check your `KITCHEN_YAML` or `KITCHEN_LOCAL_YAML` environment variable, then
-decide if you want to use .kitchen.yml(vagrant) or .kitchen.local.yml(docker), then run:
-
 `bundle exec kitchen test`
 
-More info on kitchen-docker [here](https://github.com/portertech/kitchen-docker/)
+If you want to use kitchenci with docker, add a [.kitchen.local.yml](https://gist.github.com/jespada/ee7fa103a66611374dd8) file
+More info on kitchen-docker [here](https://github.com/portertech/kitchen-docker/) and [kitchenci docs](http://kitchen.ci/docs/getting-started/creating-cookbook)
+
 Usage
 -----
 Use the recipe for the installation method you want to use, or set the attribute on the node to install from that recipe and use the default recipe. The default recipe also manages `/etc/tmux.conf`.
